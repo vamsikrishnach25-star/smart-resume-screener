@@ -1,4 +1,4 @@
-# Smart Resume Screener
+﻿# Smart Resume Screener
 
 [![Build](https://github.com/vamsikrishnach25-star/smart-resume-screener/actions/workflows/ci.yml/badge.svg)](https://github.com/vamsikrishnach25-star/smart-resume-screener/actions/workflows/ci.yml)
 [![Java](https://img.shields.io/badge/Java-17-orange)](https://openjdk.org/projects/jdk/17/)
@@ -19,6 +19,8 @@ deterministic scoring engine that keeps the whole product working when no model 
 **Ranked shortlist** - match score, sub-scores, matched and missing skills, and the model's justification for each candidate:
 
 ![Shortlist](docs/screenshot-shortlist.png)
+
+> **Reviewing this project?** [docs/EVALUATION.md](docs/EVALUATION.md) maps every requirement to the code that satisfies it, and explains the design decisions behind each one.
 
 ---
 
@@ -407,28 +409,28 @@ deterministic path and never spends a token.
 
 ```
 smart-resume-screener/
-├── src/main/java/com/vamsi/screener/
-│   ├── config/          # AppProperties, OpenAPI, CORS
-│   ├── controller/      # REST endpoints
-│   ├── dto/             # Request/response records + mapper
-│   ├── exception/       # Domain exceptions + RFC 7807 handler
-│   ├── model/           # JPA entities
-│   ├── repository/      # Spring Data repositories
-│   ├── service/
-│   │   ├── extraction/  # PDF text, LLM extractor, rule extractor, skill dictionary
-│   │   ├── llm/         # LlmClient interface, Gemini client, prompt loader, JSON parser
-│   │   └── scoring/     # LLM scorer, deterministic scorer, assessment record
-│   └── util/            # Text helpers
-├── src/main/resources/
-│   ├── prompts/         # Versioned prompt templates
-│   ├── data/skills.txt  # Skill dictionary
-│   ├── static/          # Dashboard (HTML/CSS/JS)
-│   └── application.yml
-├── src/test/java/...    # Unit + integration tests
-├── docs/                # Architecture, prompts, API examples, demo script
-├── sample-data/         # One job description, three resumes (txt + pdf)
-├── Dockerfile
-└── .github/workflows/ci.yml
+â”œâ”€â”€ src/main/java/com/vamsi/screener/
+â”‚   â”œâ”€â”€ config/          # AppProperties, OpenAPI, CORS
+â”‚   â”œâ”€â”€ controller/      # REST endpoints
+â”‚   â”œâ”€â”€ dto/             # Request/response records + mapper
+â”‚   â”œâ”€â”€ exception/       # Domain exceptions + RFC 7807 handler
+â”‚   â”œâ”€â”€ model/           # JPA entities
+â”‚   â”œâ”€â”€ repository/      # Spring Data repositories
+â”‚   â”œâ”€â”€ service/
+â”‚   â”‚   â”œâ”€â”€ extraction/  # PDF text, LLM extractor, rule extractor, skill dictionary
+â”‚   â”‚   â”œâ”€â”€ llm/         # LlmClient interface, Gemini client, prompt loader, JSON parser
+â”‚   â”‚   â””â”€â”€ scoring/     # LLM scorer, deterministic scorer, assessment record
+â”‚   â””â”€â”€ util/            # Text helpers
+â”œâ”€â”€ src/main/resources/
+â”‚   â”œâ”€â”€ prompts/         # Versioned prompt templates
+â”‚   â”œâ”€â”€ data/skills.txt  # Skill dictionary
+â”‚   â”œâ”€â”€ static/          # Dashboard (HTML/CSS/JS)
+â”‚   â””â”€â”€ application.yml
+â”œâ”€â”€ src/test/java/...    # Unit + integration tests
+â”œâ”€â”€ docs/                # Architecture, prompts, API examples, demo script
+â”œâ”€â”€ sample-data/         # One job description, three resumes (txt + pdf)
+â”œâ”€â”€ Dockerfile
+â””â”€â”€ .github/workflows/ci.yml
 ```
 
 ---
