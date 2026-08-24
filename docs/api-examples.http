@@ -1,0 +1,68 @@
+### Smart Resume Screener - example requests
+### Open in IntelliJ IDEA or VS Code (REST Client extension) and run top to bottom.
+
+@host = http://localhost:8080/api/v1
+
+### Runtime status: which engine is active?
+GET {{host}}/system/status
+
+### Create a job description
+# @name createJob
+POST {{host}}/jobs
+Content-Type: application/json
+
+{
+  "title": "Senior Backend Engineer",
+  "company": "Unthinkable",
+  "location": "Gurugram, India",
+  "minYearsExperience": 4,
+  "description": "Design and scale microservices in Java 17 and Spring Boot backed by PostgreSQL, containerised with Docker and running on Kubernetes. Publish and consume events with Apache Kafka. Bachelor's degree in computer science or equivalent practical experience.",
+  "requiredSkills": ["Java", "Spring Boot", "PostgreSQL", "Docker", "Kubernetes", "Apache Kafka"]
+}
+
+### Upload resumes (paths are relative to the repository root)
+POST {{host}}/resumes
+Content-Type: multipart/form-data; boundary=BOUNDARY
+
+--BOUNDARY
+Content-Disposition: form-data; name="files"; filename="priya_sharma.pdf"
+Content-Type: application/pdf
+
+< ../sample-data/resumes/priya_sharma.pdf
+--BOUNDARY
+Content-Disposition: form-data; name="files"; filename="arjun_reddy.pdf"
+Content-Type: application/pdf
+
+< ../sample-data/resumes/arjun_reddy.pdf
+--BOUNDARY
+Content-Disposition: form-data; name="files"; filename="rahul_mehta.pdf"
+Content-Type: application/pdf
+
+< ../sample-data/resumes/rahul_mehta.pdf
+--BOUNDARY--
+
+### List parsed resumes
+GET {{host}}/resumes
+
+### Screen every stored candidate against the role created above
+POST {{host}}/screenings
+Content-Type: application/json
+
+{
+  "jobDescriptionId": "{{createJob.response.body.id}}",
+  "minScore": 4.0,
+  "topN": 10,
+  "refresh": false
+}
+
+### Read the stored ranking again without re-scoring
+GET {{host}}/screenings/jobs/{{createJob.response.body.id}}
+
+### Validation failure example (400 with fieldErrors)
+POST {{host}}/jobs
+Content-Type: application/json
+
+{
+  "title": "",
+  "description": "too short"
+}
