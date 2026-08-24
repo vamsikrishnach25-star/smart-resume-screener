@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:screener-test;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ""
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+app:
+  llm:
+    # Tests never call an external API: the deterministic engine is exercised instead.
+    enabled: false
+    api-key: ""
+
+logging:
+  level:
+    com.vamsi.screener: WARN
