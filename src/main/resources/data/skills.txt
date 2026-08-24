@@ -1,0 +1,190 @@
+# Skill dictionary used by the deterministic extractor and by required-skill inference.
+# Format: Canonical name|alias|alias|...
+# Lines starting with '#' and blank lines are ignored. Matching is case-insensitive and
+# respects token boundaries, so "Java" never matches inside "JavaScript".
+
+# --- Languages ---
+Java|core java|java se|java 8|java 11|java 17|java 21
+Kotlin
+Scala
+Python|python3
+JavaScript|js|ecmascript
+TypeScript|ts
+C++|cpp
+C#|c sharp|csharp
+C
+Go|golang
+Rust
+Ruby
+PHP
+Swift
+Objective-C
+R
+MATLAB
+Perl
+Dart
+Groovy
+Shell Scripting|bash|shell|zsh
+PowerShell
+SQL
+PL/SQL
+HTML|html5
+CSS|css3
+Sass|scss
+
+# --- Backend frameworks ---
+Spring Boot|springboot
+Spring Framework|spring
+Spring MVC
+Spring Security
+Spring Data JPA|spring data
+Hibernate
+JPA
+Micronaut
+Quarkus
+Jakarta EE|java ee|j2ee
+Node.js|node|nodejs
+Express.js|express
+NestJS
+Django
+Flask
+FastAPI
+Ruby on Rails|rails
+Laravel
+ASP.NET|asp.net core|dotnet|.net
+Gin
+
+# --- Frontend ---
+React|react.js|reactjs
+Next.js|nextjs
+Angular|angularjs
+Vue.js|vue|vuejs
+Svelte
+Redux
+jQuery
+Tailwind CSS|tailwind
+Bootstrap
+Webpack
+Vite
+React Native
+Flutter
+Android
+iOS
+
+# --- Data & databases ---
+PostgreSQL|postgres
+MySQL
+MariaDB
+Oracle Database|oracle db
+Microsoft SQL Server|sql server|mssql
+MongoDB|mongo
+Redis
+Cassandra
+DynamoDB
+Elasticsearch|elastic search
+Neo4j
+SQLite
+H2
+Snowflake
+BigQuery
+Redshift
+Apache Kafka|kafka
+RabbitMQ
+Apache Spark|spark|pyspark
+Hadoop
+Apache Airflow|airflow
+dbt
+ETL
+Data Warehousing
+Pandas
+NumPy
+Apache Flink|flink
+
+# --- AI / ML ---
+Machine Learning|ml
+Deep Learning
+Natural Language Processing|nlp
+Computer Vision
+TensorFlow
+PyTorch
+Keras
+scikit-learn|sklearn
+Hugging Face|huggingface|transformers
+LangChain
+LlamaIndex
+OpenAI API|openai
+Google Gemini|gemini
+Anthropic Claude|claude api
+Prompt Engineering
+RAG|retrieval augmented generation
+Vector Databases|pinecone|weaviate|chroma|faiss
+MLOps
+Large Language Models|llm|llms
+
+# --- Cloud & platform ---
+AWS|amazon web services
+Amazon EC2|ec2
+Amazon S3|s3
+AWS Lambda|lambda
+Microsoft Azure|azure
+Google Cloud Platform|gcp|google cloud
+Docker
+Kubernetes|k8s
+Helm
+Terraform
+Ansible
+Jenkins
+GitHub Actions
+GitLab CI|gitlab ci/cd
+CircleCI
+ArgoCD
+CI/CD|ci cd|ci|cd|continuous integration|continuous delivery
+Linux|unix
+Nginx
+Apache Tomcat|tomcat
+Serverless
+Microservices|micro services
+gRPC
+GraphQL
+REST API|rest|restful api|rest apis
+WebSockets|websocket
+OAuth 2.0|oauth|oauth2
+JWT|json web token
+OpenAPI|swagger
+
+# --- Practices & tooling ---
+Git|github|gitlab|bitbucket
+Agile|scrum
+Kanban
+JIRA
+Test Driven Development|tdd
+Unit Testing
+JUnit
+Mockito
+TestNG
+Selenium
+Cypress
+Playwright
+Jest
+PyTest|pytest
+Postman
+Maven
+Gradle
+npm
+System Design
+Design Patterns
+Data Structures and Algorithms|dsa|data structures
+Object Oriented Programming|oop|object-oriented design
+Multithreading|concurrency
+Performance Tuning|performance optimization
+Prometheus
+Grafana
+ELK Stack|elk|logstash|kibana
+Splunk
+Datadog
+Sentry
+Figma
+Jupyter
+Power BI|powerbi
+Tableau
+Excel|advanced excel
