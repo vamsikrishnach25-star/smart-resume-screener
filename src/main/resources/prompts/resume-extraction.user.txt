@@ -1,0 +1,5 @@
+Extract the structured JSON described in your instructions from the resume below.
+
+--- RESUME TEXT START ---
+{{resumeText}}
+--- RESUME TEXT END ---
