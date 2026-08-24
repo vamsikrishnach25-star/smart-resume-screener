@@ -1,0 +1,28 @@
+Senior Backend Engineer
+Unthinkable Solutions - Gurugram, India (hybrid)
+
+About the role
+We are looking for a senior backend engineer to design and scale the services behind our lending
+platform. You will own services end to end: API design, data modelling, deployment and the on-call
+rotation that follows.
+
+What you will do
+- Design and build microservices in Java 17 and Spring Boot
+- Model and tune data in PostgreSQL, including migrations and query performance
+- Containerise services with Docker and run them on Kubernetes
+- Publish and consume events with Apache Kafka
+- Write tests that let us ship on a Friday: JUnit, Mockito, integration tests
+- Review code, mentor two or three engineers, and take part in system design discussions
+
+What we are looking for
+- 4+ years of professional backend engineering experience
+- Strong Java fundamentals: collections, concurrency, JVM behaviour under load
+- Production experience with Spring Boot and REST API design
+- Solid SQL and hands-on PostgreSQL
+- Comfortable with Docker, CI/CD pipelines and at least one cloud platform (AWS preferred)
+- Bachelor's degree in computer science or equivalent practical experience
+
+Nice to have
+- Experience with event-driven architectures
+- Exposure to observability tooling such as Prometheus and Grafana
+- Interest in applying LLMs to internal tooling

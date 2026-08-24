@@ -1,0 +1,30 @@
+PRIYA SHARMA
+Bengaluru, India | priya.sharma@example.com | +91 98765 43210 | github.com/priyasharma
+
+SUMMARY
+Backend engineer with 6 years of experience designing and scaling distributed Java services for
+payments and lending platforms. Comfortable owning a service from API design through to on-call.
+
+TECHNICAL SKILLS
+Java, Spring Boot, Spring Security, Hibernate, PostgreSQL, Redis, Apache Kafka, Docker, Kubernetes,
+AWS, REST API, JUnit, Mockito, CI/CD, Prometheus, Grafana, System Design
+
+WORK EXPERIENCE
+
+Senior Software Engineer, Fintech Labs, Bengaluru (2021 - Present)
+- Designed a payments orchestration service in Spring Boot handling 1.2 million transactions a day.
+- Modelled and tuned the PostgreSQL schema behind it, cutting p99 settlement latency from 900ms to 180ms.
+- Introduced Kafka for settlement events, replacing a nightly batch job.
+- Ran the service on Kubernetes with Prometheus and Grafana dashboards; carried the pager for it.
+- Mentored three engineers and ran the team's system design reviews.
+
+Software Engineer, Cloud Systems, Pune (2018 - 2021)
+- Built REST APIs in Java and Spring Boot for a logistics tracking product.
+- Containerised eight services with Docker and moved the team onto a GitHub Actions CI/CD pipeline.
+- Raised unit test coverage from 34% to 81% with JUnit and Mockito.
+
+EDUCATION
+B.Tech in Computer Science and Engineering, VIT University, 2018 - CGPA 8.7/10
+
+PROJECTS
+Resume ranker - a small Spring Boot service that scores resumes against a job description.

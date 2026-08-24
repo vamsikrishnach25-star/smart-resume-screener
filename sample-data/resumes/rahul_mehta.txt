@@ -1,0 +1,25 @@
+RAHUL MEHTA
+Pune, India | rahul.mehta@example.com | +91 91234 56780
+
+SUMMARY
+Frontend developer with 2 years of experience building marketing sites and dashboards. Enjoys
+turning design files into fast, accessible interfaces.
+
+TECHNICAL SKILLS
+HTML, CSS, Sass, JavaScript, TypeScript, React, Redux, Next.js, Tailwind CSS, Figma, Jest, Git
+
+WORK EXPERIENCE
+
+Frontend Developer, Design Studio, Pune (2022 - Present)
+- Built 14 marketing sites in Next.js and Tailwind CSS for B2B clients.
+- Improved Lighthouse performance scores from an average of 62 to 94.
+- Set up component testing with Jest and React Testing Library.
+
+Web Development Intern, Bright Media, Pune (2021 - 2022)
+- Converted Figma designs into responsive React components.
+
+EDUCATION
+B.Sc in Multimedia and Design, Pune University, 2022
+
+PROJECTS
+Portfolio builder - a Next.js app that generates a personal site from a JSON profile.

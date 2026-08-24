@@ -1,0 +1,25 @@
+ARJUN REDDY
+Hyderabad, India | arjun.reddy@example.com | +91 99887 76655
+
+SUMMARY
+Backend developer with 3 years of experience building Java services. Currently moving from a
+monolith into containerised microservices and picking up cloud infrastructure.
+
+TECHNICAL SKILLS
+Java, Spring Boot, Spring Data JPA, MySQL, PostgreSQL, Docker, REST API, JUnit, Maven, Git, Linux
+
+WORK EXPERIENCE
+
+Software Engineer, Retail Systems, Hyderabad (2022 - Present)
+- Built inventory and pricing REST APIs in Spring Boot on top of a MySQL database.
+- Split two modules out of the monolith into separate Spring Boot services packaged with Docker.
+- Wrote JUnit tests for the pricing engine and fixed a rounding bug affecting 4% of orders.
+
+Junior Developer, Retail Systems, Hyderabad (2021 - 2022)
+- Maintained batch jobs in core Java and wrote SQL reports for the operations team.
+
+EDUCATION
+B.E in Information Technology, Osmania University, 2021
+
+CERTIFICATIONS
+Oracle Certified Professional, Java SE 11 Developer (2023)
