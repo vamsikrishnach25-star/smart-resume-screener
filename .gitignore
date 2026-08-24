@@ -1,0 +1,37 @@
+# Build output
+target/
+build/
+*.jar
+*.war
+!.mvn/wrapper/maven-wrapper.jar
+
+# Runtime data (H2 database files created next to the app)
+/data/
+*.db
+*.mv.db
+*.trace.db
+
+# Secrets
+.env
+*.env
+secrets.properties
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+nbproject/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+logs/
+*.log
