@@ -1,0 +1,10 @@
+target/
+data/
+.git/
+.github/
+.idea/
+docs/
+sample-data/
+*.md
+*.log
+.env
